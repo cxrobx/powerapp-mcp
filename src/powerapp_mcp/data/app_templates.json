@@ -1,0 +1,96 @@
+{
+  "list_detail": {
+    "name": "List/Detail App",
+    "description": "Master/detail pattern with searchable gallery, detail view, and new-item form. Best for: inventories, contact lists, issue tracking.",
+    "screens": ["LoadingScreen", "ListScreen", "DetailScreen", "NewItemScreen"],
+    "config": {
+      "data_source": {
+        "type": "string",
+        "required": false,
+        "default": "[]",
+        "description": "Data source name or inline table (e.g., 'Inventory' or '[{Title:\"Item 1\"}]')"
+      },
+      "display_field": {
+        "type": "string",
+        "required": false,
+        "default": "Title",
+        "description": "Primary field to show in gallery items"
+      },
+      "subtitle_field": {
+        "type": "string",
+        "required": false,
+        "default": "",
+        "description": "Secondary field for gallery item subtitles"
+      },
+      "fields": {
+        "type": "array",
+        "required": false,
+        "default": ["Title", "Description", "Status"],
+        "description": "Fields to display in detail and form screens"
+      }
+    }
+  },
+  "inspection": {
+    "name": "Inspection/Checklist App",
+    "description": "Sequential checklist with step tracking and summary. Best for: inspections, audits, onboarding checklists.",
+    "screens": ["LoadingScreen", "ChecklistScreen", "StepsScreen", "SummaryScreen"],
+    "config": {
+      "checklist_source": {
+        "type": "string",
+        "required": false,
+        "default": "[]",
+        "description": "Data source for checklist items"
+      },
+      "step_fields": {
+        "type": "array",
+        "required": false,
+        "default": ["Step", "Status", "Notes"],
+        "description": "Fields per checklist step"
+      }
+    }
+  },
+  "directory": {
+    "name": "Directory/Profile App",
+    "description": "People gallery with search and profile detail view. Best for: employee directories, team rosters, expert finders.",
+    "screens": ["LoadingScreen", "DirectoryScreen", "ProfileScreen"],
+    "config": {
+      "data_source": {
+        "type": "string",
+        "required": false,
+        "default": "[]",
+        "description": "People data source"
+      },
+      "name_field": {
+        "type": "string",
+        "required": false,
+        "default": "DisplayName",
+        "description": "Field for person's name"
+      },
+      "detail_fields": {
+        "type": "array",
+        "required": false,
+        "default": ["DisplayName", "Email", "Department", "JobTitle"],
+        "description": "Fields to show on profile screen"
+      }
+    }
+  },
+  "tracker": {
+    "name": "Milestone Tracker App",
+    "description": "Dashboard with task list, status indicators, and edit form. Best for: project tracking, milestones, kanban.",
+    "screens": ["LoadingScreen", "DashboardScreen", "TaskListScreen", "TaskEditScreen"],
+    "config": {
+      "data_source": {
+        "type": "string",
+        "required": false,
+        "default": "[]",
+        "description": "Task data source"
+      },
+      "status_options": {
+        "type": "string",
+        "required": false,
+        "default": "[\"Not Started\", \"In Progress\", \"Complete\"]",
+        "description": "Status dropdown options"
+      }
+    }
+  }
+}

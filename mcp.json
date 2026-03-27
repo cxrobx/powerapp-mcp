@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "powerapp": {
+      "command": "/path/to/powerapp-mcp/.venv/bin/python3",
+      "args": ["-m", "powerapp_mcp.server"],
+      "cwd": "/path/to/powerapp-mcp/src"
+    }
+  }
+}
