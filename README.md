@@ -4,7 +4,7 @@ An MCP server that generates **Power Apps `.msapp` files from natural language**
 app in Claude Code — screens, controls, data sources, theme — and get back a real `.msapp` you
 can import straight into Power Apps Studio, plus an interactive HTML preview before you commit.
 
-![Generated app preview](preview_tracker_dashboard.png)
+![Generated app preview](docs/media/preview_tracker_dashboard.png)
 
 ## How it works
 
